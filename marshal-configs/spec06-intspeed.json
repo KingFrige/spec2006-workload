@@ -6,15 +6,15 @@
   "overlay" : "speckle/build/overlay/intspeed/ref",
   "rootfs-size" : "3GiB",
   "outputs" : ["/output"],
-  "post_run_hook" : "handle-results.py -d ref -s int",
+  "post_run_hook" : "handle-results.py -d ref -s intspeed",
   "jobs" : [
     {
       "name": "400.perlbench",
-      "command": "./intspeed.sh 400.perlbench --copies 4"
+      "command": "./intspeed.sh 400.perlbench"
     },
     {
       "name": "403.gcc",
-      "command": "./intspeed.sh 403.gcc --copies 4"
+      "command": "./intspeed.sh 403.gcc"
     },
   ]
 }
