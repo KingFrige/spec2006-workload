@@ -1,5 +1,5 @@
 {
-  "name" : "spec06-int",
+  "name" : "spec06-intspeed",
   "base" : "br-base.json",
   "workdir" : "..",
   "host-init" : "build-intspeed.sh ref",
@@ -10,11 +10,11 @@
   "jobs" : [
     {
       "name": "400.perlbench",
-      "command": "./int.sh 400.perlbench --copies 4"
+      "command": "./intspeed.sh 400.perlbench --copies 4"
     },
     {
       "name": "403.gcc",
-      "command": "./int.sh 403.gcc --copies 4"
+      "command": "./intspeed.sh 403.gcc --copies 4"
     },
   ]
 }
