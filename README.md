@@ -29,3 +29,7 @@ test
 
 ref
 --------
+
+[SPEC2017 Workload](https://github.com/ucb-bar/spec2017-workload)
+
+
