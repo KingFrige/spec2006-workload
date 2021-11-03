@@ -5,6 +5,7 @@ Requirements
 ------------
 
 - SPEC2006 installed and have `SPEC_DIR` env. variable point to installation
+- riscv-toolchain
 
 Getting Started
 ---------------
@@ -21,3 +22,10 @@ After that you can use FireMarshal as normal and point to the `json` workload co
 
 See https://firemarshal.readthedocs.io/en/latest/index.html for FireMarshal
 documentation.
+
+test
+    ./build-intrate.sh ref 5
+    ./build-intspeed.sh ref
+
+ref
+--------

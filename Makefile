@@ -15,7 +15,7 @@ spec06_suites = int fp all
 spec06_rootfs_dirs = $(patsubst %, spec06-%, $(spec06-suites))
 
 $(SPECKLE_DIR)/build/overlay/%/$(INPUT):
-	-cd $(SPECKLE_DIR) && ./gen_binaries.sh --compile --input $(INPUT) --rate $(RATE) --suite $(SUITE)
+	cd $(SPECKLE_DIR) && ./gen_binaries.sh --compile --input $(INPUT) --rate $(RATE) --suite $(SUITE)
 
 spec06-%: $(SPECKLE_DIR)/build/overlay/%/$(INPUT);
 	echo $^
